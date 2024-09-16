@@ -71,40 +71,41 @@ const chartData = {
         datasets: [{
             label: "Happyness",
             data: [one.happyness, two.happyness, thr.happyness, fou.happyness, fiv.happyness, six.happyness, sev.happyness],
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            borderColor: 'rgba(255, 99, 132, 1)',
+            backgroundColor: 'rgba(255, 211, 101, 0.2)',
+            borderColor: 'rgba(255, 211, 101, 1)',
             borderWidth: 1,
 			fill: false,
 			tension: 0.2
         },	{
 			label: "Stress",
 			data: [one["stress"], two["stress"], thr["stress"], fou["stress"], fiv["stress"], six["stress"], sev["stress"]],
-			backgroundColor: 'rgba(85, 174, 229, 0.2)',
-            borderColor: 'rgba(85, 174, 229, 1)',
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgba(255, 99, 132, 1)',
             borderWidth: 1,
 			fill: false,
 			tension: 0.2
 		}, {
 			label: "Hours Worked",
 			data: [one["hours-worked"], two["hours-worked"], thr["hours-worked"], fou["hours-worked"], fiv["hours-worked"], six["hours-worked"], sev["hours-worked"]],
-			backgroundColor: 'rgba(255, 211, 101, 0.2)',
-            borderColor: 'rgba(255, 211, 101, 1)',
+            backgroundColor: 'rgba(153, 50, 204, 0.2)',
+            borderColor: 'rgba(153, 50, 204, 1)',
+            borderWidth: 1,
             borderWidth: 1,
 			fill: false,
 			tension: 0.2
 		}, {
 			label: "Hours Slept",
 			data: [one["hours-slept"], two["hours-slept"], thr["hours-slept"], fou["hours-slept"], fiv["hours-slept"], six["hours-slept"], sev["hours-slept"]],
-			backgroundColor: 'rgba(92, 197, 193, 0.2)',
-            borderColor: 'rgba(92, 197, 193, 1)',
+            backgroundColor: 'rgba(85, 174, 229, 0.2)',
+            borderColor: 'rgba(85, 174, 229, 1)',
             borderWidth: 1,
 			fill: false,
 			tension: 0.2
 		}, {
 			label: "Productivity",
 			data: [one.productivity, two.productivity, thr.productivity, fou.productivity, fiv.productivity, six.productivity, sev.productivity],
-			backgroundColor: 'rgba(153, 50, 204, 0.2)',
-            borderColor: 'rgba(153, 50, 204, 1)',
+            backgroundColor: 'rgba(92, 197, 193, 0.2)',
+            borderColor: 'rgba(92, 197, 193, 1)',
             borderWidth: 1,
 			fill: false,
 			tension: 0.2
