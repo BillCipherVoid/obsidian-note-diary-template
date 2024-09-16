@@ -3,10 +3,10 @@
 ### ☑ Todo
 <%*
 folder = tp.file.folder(relative=true)
-const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+const weekday = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 // doing things in a very roundabout way because templater is being uncooperative
 const year = folder.split('/').slice(1, 2).join('/');
-const week = parseInt((folder.split('/').slice(2, 3).join('/')).slice(-1));
+const week = parseInt((folder.split('/').slice(2, 3).join('/')).slice(-2));
 for (let i = 0; i < 7; i++) {  
 	day = weekday[i]
 	dayNo = tp.date.weekday("DD", i, year.concat(String(week).padStart(2, "0")), "YYYYww")
@@ -22,10 +22,10 @@ for (let i = 0; i < 7; i++) {
 
 ```dataviewjs
 const folder = "<%tp.file.folder(relative=true)%>"
-const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+const weekday = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 // doing things in a very roundabout way because templater is being uncooperative
 const year = folder.split('/').slice(1, 2).join('/');
-const week = parseInt((folder.split('/').slice(2, 3).join('/')).slice(-1));
+const week = parseInt((folder.split('/').slice(2, 3).join('/')).slice(-2));
 
 
 
